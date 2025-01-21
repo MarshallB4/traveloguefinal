@@ -182,3 +182,21 @@ html {
 .image-credit a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 870px) {
+    .content {
+        flex-direction: column;
+    }
+    .text, .image {
+        width: 100%;
+    }
+    .location {
+        padding: 1rem;
+    }
+    .text h2 {
+        font-size: 1.8rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+}
