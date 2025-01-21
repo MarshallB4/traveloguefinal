@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: #f0f0f0;
+    background-color: #0e0f0f; 
+    line-height: 1.6;
+}
+
+
+
+header {
+    text-align: center;
+    padding: 2rem 1rem; 
+    background-color: #17191a; 
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+    color: #ffc21b;
+}
+
+nav {
+    background-color: #262a2b;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /*keep it ontop of everything else */
+}
+
+nav ul {
+    display: flex; /*arrange in a row */
+    justify-content: center;
+    list-style: none; /* no bullet points*/
+
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc21b;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.location {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #262a2b;
+    border-radius: 8px; /* rounded corners*/
+}
+
+.content {
+    display: flex; /*align side by side */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content.reverse {
+    flex-direction: row-reverse; /*makes the venice part reversed */
+}
+
+.text {
+
+    flex: 1;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.text p:first-of-type {
+    font-style: normal;
+}
+
+.text p:nth-of-type(2) {
+    font-style: italic;
+}
+
+.text p + p {
+    border-top: 2px solid #ffc21b;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+
+.text a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #ffc21b;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.text a:hover {
+    color: #ffc21b;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #17191a;
+    margin-top: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.introduction {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #262a2b;
+    border-radius: 8px;
+}
+
+.introduction .text h2 {
+    font-size: 2rem;
+    color: #ffc21b;
+    margin-bottom: 1rem;
+}
+
+.introduction .text p {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    line-height: 1.8;
+}
+
+
+
+.city-name { /*this links with the span command to make the names gold */
+    color: #ffc21b;
+}
+
+
+
+.image-credit {
+    font-size: 0.7rem;
+    color: #888;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.image-credit a {
+    color: #ffc21b;
+    text-decoration: none;
+}
+
+.image-credit a:hover {
+    text-decoration: underline;
+}
